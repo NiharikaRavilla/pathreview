@@ -20,3 +20,15 @@ This issue is appropriate for me because it has a clearly identified test file a
 **Setup confirmation:** [x] App runs locally at localhost:5173
 
 **Cohort ledger:** [x] Issue added to cohort ledger
+
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** https://github.com/NiharikaRavilla/pathreview/commit/c918049
+**Reproduction summary:**  
+I confirmed that the repository does not yet have the full end-to-end RAG integration test described in the issue. I traced the relevant flow through retrieval, generation, and parsing, and the missing piece is a single deterministic test that connects those steps with a mock LLM.
+
+**PLAN.md link:** (https://github.com/NiharikaRavilla/pathreview/blob/test/38-rag-pipeline-integration/PLAN.md)
+
+
+**Blockers or open questions:**  
+The main open question is how reranking should be handled in the test if it is implemented separately. I also want to confirm the cleanest way to mock the LLM client so the test stays stable in CI.
