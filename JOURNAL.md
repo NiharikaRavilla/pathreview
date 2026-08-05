@@ -50,7 +50,7 @@ I will run the project checks, review the test against the contribution standard
 
 ### Check-in 2 (end of week)
 
-**PR link:** Pending PR creation
+**PR link:** https://github.com/NiharikaRavilla/pathreview/pull/1
 
 **Branch:** `test/38-rag-pipeline-integration`
 
