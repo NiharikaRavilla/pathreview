@@ -63,3 +63,34 @@ I added `tests/integration/test_rag_pipeline.py`. It verifies the profile collec
 **Self-review confirmation:** [x] make check passes (no new failures; pre-existing lint and formatting failures documented)  [x] make test-unit passes (no new failures; 53 pre-existing unit-test failures documented)
 
 **Draft PR feedback received from:** none
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — still awaiting review
+
+**Summary of feedback:**
+No reviewer feedback came in. Reviewer feedback was not provided for this Summer 2026 cohort, so there were no comments to address on my PR.
+
+**How you responded:**
+No changes or replies were needed because no reviewer comments were received.
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+Understanding how the RAG pieces connect was harder than I expected. I had to read the retriever, generator, prompt templates, and output parser before I could write one useful integration test. I also had to separate existing project failures from problems caused by my own change.
+
+**What did you learn about working in a large codebase?**
+I learned that a change can look small but still depend on several parts of the codebase. In my own projects, I usually know where everything is. In this project, I needed to follow existing patterns, understand the test setup, and avoid changing code outside my issue.
+
+**How did AI tools help — and where did they fall short?**
+AI tools helped me quickly find related files, understand unfamiliar code, and draft the first version of the test. They could not decide the correct scope by themselves. I still needed to read the code and notice that the repository does not have a reranker yet, even though the issue mentioned one.
+
+**What would you do differently if you started over?**
+I would open a draft PR earlier and ask for feedback sooner. I would also first check all project commands and existing failures before starting implementation, so I could document the baseline more efficiently.
+
+**What are you most proud of from this module?**
+I am most proud that I added a test that does not depend on a real LLM or external services. The test is repeatable, free to run, and checks the connection between retrieval, generation, parsing, and citations.
